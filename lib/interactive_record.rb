@@ -6,6 +6,6 @@ class InteractiveRecord
   def self.table_name
     self.to_s
   end
-  
-  
+
+
 end
