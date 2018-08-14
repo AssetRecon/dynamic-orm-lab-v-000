@@ -29,7 +29,7 @@ class InteractiveRecord
   end
 
   def col_names_for_insert
-    self.class.column_names.drop(1).join(",")
+    self.class.column_names.drop(1).join(", ")
   end
 
 
