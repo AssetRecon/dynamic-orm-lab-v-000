@@ -33,7 +33,7 @@ class InteractiveRecord
   end
 
   def
-     
+
   end
 
 
