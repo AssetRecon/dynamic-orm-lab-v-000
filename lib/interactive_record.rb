@@ -33,9 +33,9 @@ class InteractiveRecord
   end
 
   def vales_for_insert
-    
+
   end
-  
+
 
 
 end
