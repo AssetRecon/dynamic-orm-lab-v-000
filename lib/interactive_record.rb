@@ -7,5 +7,12 @@ class InteractiveRecord
     self.to_s.downcase.pluralize
   end
 
+  self.column_names
+    DB[:conn].results_as_hash = true
+    sql = "pragma table_info(?)"
+    table_info = DB.[:conn].execute(sql,table_name)
+    
+  end
+
 
 end
