@@ -35,10 +35,11 @@ class InteractiveRecord
   def values_for_insert
     values = []
     self.class.col_names_for_insert.each do |column_name|
-    values << column_name
+    values << send "#'{column_name}"
   end
   values
   end
+
 
 
 
