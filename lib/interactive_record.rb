@@ -35,7 +35,7 @@ class InteractiveRecord
   def values_for_insert
     values = []
     self.class.col_names_for_insert.each do |column_name|
-    values << send "#'{column_name}'" if send(column_name) != nil
+    values << send "'#{send(col_name)}'" if send(column_name) != nil
   end
   values
   end
