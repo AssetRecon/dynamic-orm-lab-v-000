@@ -32,5 +32,10 @@ class InteractiveRecord
     self.class.column_names.drop(1).join(", ")
   end
 
+  def vales_for_insert
+    
+  end
+  
+
 
 end
